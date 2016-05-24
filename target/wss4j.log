@@ -1,92 +1,132 @@
 0    [main] DEBUG org.apache.cxf.common.logging.LogUtils  - Using org.apache.cxf.common.logging.Log4jLogger for logging.
 118  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.transport.http.asyncclient.AsyncHTTPConduitFactory/bus> type <interface org.apache.cxf.Bus>
 118  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
-136  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.binding.AbstractBindingFactory/bus> type <interface org.apache.cxf.Bus>
-137  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
-182  [main] DEBUG org.apache.cxf.jaxrs.provider.ProviderFactory  - Problem with creating the default provider org.apache.cxf.jaxrs.provider.json.JSONProvider: org/codehaus/jettison/mapped/TypeConverter
-223  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@78186a70 to phase setup
-223  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@306279ee to phase prepare-send
-223  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@306279ee to phase prepare-send
-224  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxrs.client.spec.ClientRequestFilterInterceptor@727803de to phase pre-logical
-240  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit' has been (re)configured for plain http.
-241  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Trust Decider configured for Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit'
-241  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Auth Supplier configured for Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit'
-241  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit' has been configured for plain http.
-241  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - registering incoming observer: org.apache.cxf.jaxrs.client.ClientMessageObserver@4f51b3e0
-241  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxrs.client.WebClient$BodyWriter@1ad282e0 to phase write
-242  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@5e955596 was created. Current flow:
+130  [main] DEBUG org.apache.cxf.jaxws.ServiceImpl  - creating port for portName
+130  [main] DEBUG org.apache.cxf.jaxws.ServiceImpl  - endpoint reference:
+130  [main] DEBUG org.apache.cxf.jaxws.ServiceImpl  - endpoint interface:
+164  [main] INFO  org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean  - Creating Service {http://ckwanted.com/ss}SimpleService from class com.ckwanted.ss.SimpleService
+335  [main] DEBUG org.apache.cxf.jaxb.JAXBDataBinding  - Created JAXBContext "jar:file:/Users/ckwanted/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.13/jaxb-impl-2.1.13.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.1.13
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.ckwanted.ss.Concat
+  com.ckwanted.ss.ConcatResponse
+  com.ckwanted.ss.EliminarResponseT
+  com.ckwanted.ss.EliminarT
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  long
+  short
+  void
+" with classes [class com.ckwanted.ss.EliminarT, class com.ckwanted.ss.EliminarResponseT, class com.ckwanted.ss.ObjectFactory].
+452  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+452  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
+617  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - building handler chain
+617  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on com.ckwanted.ss.SimpleService_Service
+618  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on javax.xml.ws.Service
+618  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on java.lang.Object
+618  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - no HandlerChain annotation on class com.ckwanted.ss.SimpleService_Service
+618  [main] DEBUG org.apache.cxf.jaxws.ServiceImpl  - created proxy
+620  [main] DEBUG org.apache.cxf.endpoint.ClientImpl  - Invoke, operation info: [BindingOperationInfo: {http://ckwanted.com/ss}concat], params: [com.ckwanted.ss.EliminarT@6e9175d8]
+621  [main] DEBUG org.apache.cxf.endpoint.ClientImpl  - set requestContext to message be{org.apache.cxf.jaxws.context.WrappedMessageContext.SCOPES={}, java.lang.reflect.Method=public abstract com.ckwanted.ss.EliminarResponseT com.ckwanted.ss.SimpleService.concat(com.ckwanted.ss.EliminarT)}
+623  [main] DEBUG org.apache.cxf.endpoint.ClientImpl  - Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@25ce9dc4]
+623  [main] DEBUG org.apache.cxf.endpoint.ClientImpl  - Interceptors contributed by client: []
+623  [main] DEBUG org.apache.cxf.endpoint.ClientImpl  - Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@74ea2410, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@17f62e33, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@76b1e9b8, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@27406a17]
+623  [main] DEBUG org.apache.cxf.endpoint.ClientImpl  - Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@2af004b, org.apache.cxf.interceptor.StaxOutInterceptor@248e319b, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5d0bf09b, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@793f29ff, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@3e8c3cb, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@563f38c4]
+623  [main] DEBUG org.apache.cxf.endpoint.ClientImpl  - Interceptors contributed by databinding: []
+626  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@25ce9dc4 to phase setup
+626  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@74ea2410 to phase prepare-send
+626  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@17f62e33 to phase pre-logical
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@76b1e9b8 to phase pre-logical
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@27406a17 to phase pre-logical
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@2af004b to phase pre-stream
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@248e319b to phase pre-stream
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5d0bf09b to phase pre-logical
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@793f29ff to phase marshal
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@3e8c3cb to phase post-logical
+627  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@563f38c4 to phase write
+657  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - Conduit '{http://ckwanted.com/ss}p1.http-conduit' has been (re)configured for plain http.
+657  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Trust Decider configured for Conduit '{http://ckwanted.com/ss}p1.http-conduit'
+657  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Auth Supplier configured for Conduit '{http://ckwanted.com/ss}p1.http-conduit'
+657  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - Conduit '{http://ckwanted.com/ss}p1.http-conduit' has been configured for plain http.
+657  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - registering incoming observer: org.apache.cxf.endpoint.ClientImpl@61c4eee0
+658  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@548a24a was created. Current flow:
   setup [PolicyOutInterceptor]
-  pre-logical [ClientRequestFilterInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
   prepare-send [MessageSenderInterceptor]
-  write [BodyWriter]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [BareOutInterceptor]
 
-243  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@78186a70
-243  [main] DEBUG org.apache.cxf.ws.policy.PolicyOutInterceptor  - No binding operation info.
-243  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.spec.ClientRequestFilterInterceptor@727803de
-243  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@306279ee
-251  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@32464a14 to phase prepare-send-ending
-251  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@5e955596 was modified. Current flow:
-  setup [PolicyOutInterceptor]
-  pre-logical [ClientRequestFilterInterceptor]
-  prepare-send [MessageSenderInterceptor]
-  write [BodyWriter]
-  prepare-send-ending [MessageSenderEndingInterceptor]
-
-251  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.WebClient$BodyWriter@1ad282e0
-266  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@32464a14
-268  [main] DEBUG org.apache.cxf.transport.http.Headers  - Accept: application/xml
-268  [main] DEBUG org.apache.cxf.transport.http.Headers  - Content-Type: application/x-www-form-urlencoded
-268  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Trust Decider for Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit'. An afirmative Trust Decision is assumed.
-286  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - Sending POST Message with Headers to http://daw2-p2.app:8888/serv/user/login Conduit :{http://daw2-p2.app:8888/serv}WebClient.http-conduit
-
-766  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@ba8d91c to phase receive
-766  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxrs.client.WebClient$ClientAsyncResponseInterceptor@7364985f to phase unmarshal
-767  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxrs.client.spec.ClientResponseFilterInterceptor@7ff2a664 to phase pre-protocol-frontend
-767  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@525b461a was created. Current flow:
-  receive [PolicyInInterceptor]
-  pre-protocol-frontend [ClientResponseFilterInterceptor]
-  unmarshal [ClientAsyncResponseInterceptor]
-
-767  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@ba8d91c
-783  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.spec.ClientResponseFilterInterceptor@7ff2a664
-783  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.WebClient$ClientAsyncResponseInterceptor@7364985f
-998  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@78186a70 to phase setup
-998  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@223aa2f7 to phase prepare-send
-998  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@223aa2f7 to phase prepare-send
-998  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxrs.client.spec.ClientRequestFilterInterceptor@6d3a388c to phase pre-logical
-998  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit' has been (re)configured for plain http.
-998  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Trust Decider configured for Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit'
-999  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Auth Supplier configured for Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit'
-999  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit' has been configured for plain http.
-999  [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - registering incoming observer: org.apache.cxf.jaxrs.client.ClientMessageObserver@193f604a
-999  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@20f5239f was created. Current flow:
-  setup [PolicyOutInterceptor]
-  pre-logical [ClientRequestFilterInterceptor]
-  prepare-send [MessageSenderInterceptor]
-
-999  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@78186a70
-999  [main] DEBUG org.apache.cxf.ws.policy.PolicyOutInterceptor  - No binding operation info.
-999  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.spec.ClientRequestFilterInterceptor@6d3a388c
-999  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@223aa2f7
-1000 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@57af006c to phase prepare-send-ending
-1000 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@20f5239f was modified. Current flow:
-  setup [PolicyOutInterceptor]
-  pre-logical [ClientRequestFilterInterceptor]
-  prepare-send [MessageSenderInterceptor]
-  prepare-send-ending [MessageSenderEndingInterceptor]
-
-1000 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@57af006c
-1000 [main] DEBUG org.apache.cxf.transport.http.Headers  - Accept: application/xml
-1000 [main] DEBUG org.apache.cxf.transport.http.Headers  - Content-Type: */*
-1000 [main] DEBUG org.apache.cxf.transport.http.HTTPConduit  - No Trust Decider for Conduit '{http://daw2-p2.app:8888/serv}WebClient.http-conduit'. An afirmative Trust Decision is assumed.
-1379 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@ba8d91c to phase receive
-1379 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxrs.client.WebClient$ClientAsyncResponseInterceptor@6bedbc4d to phase unmarshal
-1379 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxrs.client.spec.ClientResponseFilterInterceptor@932bc4a to phase pre-protocol-frontend
-1379 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@d29f28 was created. Current flow:
-  receive [PolicyInInterceptor]
-  pre-protocol-frontend [ClientResponseFilterInterceptor]
-  unmarshal [ClientAsyncResponseInterceptor]
-
-1379 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@ba8d91c
-1379 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.spec.ClientResponseFilterInterceptor@932bc4a
-1379 [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.WebClient$ClientAsyncResponseInterceptor@6bedbc4d
+658  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@25ce9dc4
+659  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@27406a17
+659  [main] DEBUG org.apache.cxf.jaxws.interceptors.HolderOutInterceptor  - op: [OperationInfo: {http://ckwanted.com/ss}concat]
+659  [main] DEBUG org.apache.cxf.jaxws.interceptors.HolderOutInterceptor  - op.hasOutput(): true
+659  [main] DEBUG org.apache.cxf.jaxws.interceptors.HolderOutInterceptor  - op.getOutput().size(): 1
+659  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@17f62e33
+660  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@76b1e9b8
+660  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5d0bf09b
+660  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@3e8c3cb
+660  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@74ea2410
+661  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleFault on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@74ea2410
+661  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleFault on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@3e8c3cb
+661  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleFault on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5d0bf09b
+661  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleFault on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@76b1e9b8
+661  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleFault on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@17f62e33
+661  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleFault on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@27406a17
+661  [main] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleFault on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@25ce9dc4
+662  [main] WARN  org.apache.cxf.phase.PhaseInterceptorChain  - Interceptor for {http://ckwanted.com/ss}SimpleService#{http://ckwanted.com/ss}concat has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor.handleMessage(MessageSenderInterceptor.java:48)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:502)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:411)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:314)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:267)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:137)
+	at com.sun.proxy.$Proxy42.concat(Unknown Source)
+	at com.ckwanted.ss.SimpleService_P1_Client.main(SimpleService_P1_Client.java:57)
+Caused by: java.io.IOException: java.net.URISyntaxException: Invalid address. Endpoint address cannot be null. at index 0: <null>
+	at org.apache.cxf.transport.http.HTTPConduit.prepare(HTTPConduit.java:473)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor.handleMessage(MessageSenderInterceptor.java:46)
+	... 9 more
+Caused by: java.net.URISyntaxException: Invalid address. Endpoint address cannot be null. at index 0: <null>
+	at org.apache.cxf.transport.http.HTTPConduit.getURI(HTTPConduit.java:723)
+	at org.apache.cxf.transport.http.HTTPConduit.getURI(HTTPConduit.java:706)
+	at org.apache.cxf.transport.http.HTTPConduit.setupURI(HTTPConduit.java:662)
+	at org.apache.cxf.transport.http.HTTPConduit.prepare(HTTPConduit.java:471)
+	... 10 more
