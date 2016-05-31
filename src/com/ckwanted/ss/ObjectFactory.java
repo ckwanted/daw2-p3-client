@@ -1,10 +1,7 @@
 
 package com.ckwanted.ss;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
-import javax.xml.namespace.QName;
 
 
 /**
@@ -24,8 +21,6 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _EliminarResponse_QNAME = new QName("http://ckwanted.com/ss", "eliminarResponse");
-    private final static QName _Eliminar_QNAME = new QName("http://ckwanted.com/ss", "eliminar");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.ckwanted.ss
@@ -35,53 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EliminarT }
+     * Create an instance of {@link EliminarResponse }
      * 
      */
-    public EliminarT createEliminarT() {
-        return new EliminarT();
+    public EliminarResponse createEliminarResponse() {
+        return new EliminarResponse();
     }
 
     /**
-     * Create an instance of {@link ConcatResponse }
+     * Create an instance of {@link Eliminar }
      * 
      */
-    public ConcatResponse createConcatResponse() {
-        return new ConcatResponse();
-    }
-
-    /**
-     * Create an instance of {@link EliminarResponseT }
-     * 
-     */
-    public EliminarResponseT createEliminarResponseT() {
-        return new EliminarResponseT();
-    }
-
-    /**
-     * Create an instance of {@link Concat }
-     * 
-     */
-    public Concat createConcat() {
-        return new Concat();
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarResponseT }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ckwanted.com/ss", name = "eliminarResponse")
-    public JAXBElement<EliminarResponseT> createEliminarResponse(EliminarResponseT value) {
-        return new JAXBElement<EliminarResponseT>(_EliminarResponse_QNAME, EliminarResponseT.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarT }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ckwanted.com/ss", name = "eliminar")
-    public JAXBElement<EliminarT> createEliminar(EliminarT value) {
-        return new JAXBElement<EliminarT>(_Eliminar_QNAME, EliminarT.class, null, value);
+    public Eliminar createEliminar() {
+        return new Eliminar();
     }
 
 }

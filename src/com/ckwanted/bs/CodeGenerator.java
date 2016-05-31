@@ -9,10 +9,10 @@ public class CodeGenerator {
 		WSDLToJava.main(new String[] {
 			"-client",
 			"-d", "src",
-			"src/main/resources/SimpleService.wsdl"
+			"file:src/main/resources/SimpleService.wsdl"
 		});
 		
-		System.out.println("Archivos generados correctamente ...");
+		System.out.println("Archivos generados correctamente en el cliente...");
 
 	}
 

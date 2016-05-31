@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="out" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="in" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,36 +29,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "out"
+    "in"
 })
-@XmlRootElement(name = "concatResponse")
-public class ConcatResponse {
+@XmlRootElement(name = "eliminar")
+public class Eliminar {
 
     @XmlElement(required = true)
-    protected String out;
+    protected String in;
 
     /**
-     * Gets the value of the out property.
+     * Gets the value of the in property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getOut() {
-        return out;
+    public String getIn() {
+        return in;
     }
 
     /**
-     * Sets the value of the out property.
+     * Sets the value of the in property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setOut(String value) {
-        this.out = value;
+    public void setIn(String value) {
+        this.in = value;
     }
 
 }
